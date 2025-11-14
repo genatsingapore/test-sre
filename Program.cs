@@ -127,7 +127,7 @@ app.MapGet("/", async context =>
         </form>
         {(injectError ? $"<div class='note'>Button clicked <b>{pressCount}</b> times (error on 6th click).</div>" : "")}
         {(injectError ? "<div class='warning'>ERROR INJECTION ENABLED: Simulated error will occur after 5 clicks.<br/>This is for troubleshooting demos.<br/>To stop the HTTP 500s, append \"?=safe=1\" to the URL.</div>" : "")}
-        <div class='note'>Note: For the demo to work, set app setting <b>INJECT_ERROR=1</b> on the slot you want to simulate errors!</div>
+        <div class='note'>Note V1: For the demo to work, set app setting <b>INJECT_ERROR=1</b> on the slot you want to simulate errors!</div>
     </div>
 </body>
 </html>
@@ -135,3 +135,4 @@ app.MapGet("/", async context =>
 });
 
 app.Run();
+
