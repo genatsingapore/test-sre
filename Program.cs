@@ -26,7 +26,7 @@ app.MapGet("/", async context =>
     context.Response.Cookies.Append("crashCount", pressCount.ToString(), new CookieOptions { Expires = DateTimeOffset.Now.AddHours(1) });
 
 
-  // CPU Spike Simulation
+  // CPU Spike Simulation Sample
     if (failureMode && !safeMode)
     {
         // Simulate high CPU usage for testing
